@@ -18,7 +18,7 @@ html {
 }
 
 section {
-    min-width: 100vh;
+    min-width: 80vh;
     padding: 50px 60px;
     display: flex;
     align-items: center;
@@ -141,7 +141,7 @@ section {
 /* Hero Section */
 
 .Home {
-     min-height: 80vh;
+    min-height: 100vh;
     padding: 80px;
     display: flex;
     flex-direction: column;
@@ -206,7 +206,7 @@ section {
 /* About Section */
 
 .about {
-   min-height: 100vh;
+   min-height: 80vh;
     padding: 80px;
     display: flex;
     align-items: center;
@@ -255,7 +255,7 @@ section {
 /* Skills Section */
 
 .skills {
-   min-height: 100vh;
+   min-height: 80vh;
     padding: 80px;
     display: flex;
     flex-direction: column;
@@ -341,7 +341,7 @@ section {
 
 /* Projects Section */
 .projects {
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 80px;
     display: flex;
     flex-direction: column;
