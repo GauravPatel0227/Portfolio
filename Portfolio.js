@@ -1,72 +1,82 @@
-import "web-awesome/dist/css/web-awesome.min.css";
-/* 
-   Smooth Scroll (Fallback)
- */
-document.querySelectorAll('.nav-center a').forEach(link => {
-    link.addEventListener('click', e => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
+/*
+   MOBILE MENU TOGGLE */
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-center");
 
-        targetSection.scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
 });
 
 /* 
-   Active Nav Link on Scroll
- */
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-center a');
-
-window.addEventListener('scroll', () => {
-    let current = '';
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 150;
-        if (scrollY >= sectionTop) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-        }
-    });
+   CLOSE MENU ON CLICK */
+document.querySelectorAll(".nav-center a").forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+  });
 });
 
-/* 
-   Navbar Shadow on Scroll
- */
-const navbar = document.querySelector('.navbar');
+/*
+   ACTIVE NAV ON SCROLL */
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-center a");
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.08)';
-    } else {
-        navbar.style.boxShadow = 'none';
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 120;
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute("id");
     }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
 });
 
-/* 
-   Contact Form Validation */
-const form = document.querySelector('.contact-form form');
+/*
+   SCROLL REVEAL ANIMATION */
+const revealElements = document.querySelectorAll(
+  ".about-container, .skill-card, .project-card, .contact-form"
+);
 
-form.addEventListener('submit', e => {
-    e.preventDefault();
+const revealOnScroll = () => {
+  revealElements.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
 
-    const name = form.querySelector('input[type="text"]').value.trim();
-    const email = form.querySelector('input[type="email"]').value.trim();
-    const message = form.querySelector('textarea').value.trim();
-
-    if (!name || !email || !message) {
-        alert('Please fill in all required fields.');
-        return;
+    if (top < windowHeight - 80) {
+      el.classList.add("show");
     }
+  });
+};
 
-    alert('Message sent successfully!');
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const form = event.target;
+  const successMsg = document.getElementById("success-message");
+
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(form)
+  })
+  .then(() => {
+    successMsg.style.display = "block";
     form.reset();
-});
+
+    setTimeout(() => {
+      successMsg.style.display = "none";
+    }, 4000);
+  })
+  .catch(() => {
+    alert("Something went wrong. Please try again.");
+  });
+}

@@ -11,148 +11,7 @@ body {
     color: #ffffff;
     
 }
-@media (max-width: 768px) {
 
-    /* -------- Navbar -------- */
-    .navbar {
-        padding: 14px 20px;
-    }
-
-    .nav-center {
-        display: none;
-    }
-
-    .logo {
-        font-size: 16px;
-    }
-
-    .nav-icons a {
-        width: 34px;
-        height: 34px;
-    }
-
-    /* -------- Home -------- */
-    .Home {
-        padding: 100px 20px;
-        text-align: center;
-        align-items: center;
-    }
-
-    .Home h1 {
-        font-size: 34px;
-    }
-
-    .Home p {
-        font-size: 16px;
-        color: #bbb;
-    }
-
-    .buttons {
-        flex-direction: column;
-        width: 100%;
-        gap: 12px;
-    }
-
-    .buttons a {
-        width: 100%;
-    }
-
-    /* -------- About -------- */
-    .about {
-        padding: 60px 20px;
-    }
-
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .about-content {
-        margin-bottom: 0;
-    }
-
-    .about-content h1 {
-        font-size: 32px;
-    }
-
-    .about-content p {
-        font-size: 16px;
-    }
-
-    /* -------- Skills -------- */
-    .skills {
-        padding: 60px 20px;
-        text-align: center;
-    }
-
-    .skills h2 {
-        font-size: 32px;
-    }
-
-    .skills-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skill-card {
-        width: 100%;
-        max-width: 340px;
-    }
-
-    /* -------- Projects -------- */
-    .projects {
-        padding: 60px 20px;
-        text-align: center;
-    }
-
-    .projects h2 {
-        font-size: 32px;
-    }
-
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-card {
-        width: 100%;
-        max-width: 340px;
-    }
-
-    /* -------- Contact -------- */
-    .contact {
-        padding: 60px 20px;
-    }
-
-    .contact h2 {
-        font-size: 32px;
-    }
-
-    .contact-container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .contact-form {
-        width: 100%;
-    }
-
-    /* -------- Footer -------- */
-    .footer {
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-bottom {
-        font-size: 12px;
-    }
-}
 
 
 html {
@@ -276,6 +135,35 @@ section {
     color: #000000;
     border-color: #000;
 }
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Show menu icon on mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-center {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    border-radius: 20px;
+    padding: 15px 25px;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-center.active {
+    display: flex;
+  }
+}
 
 
 
@@ -345,6 +233,7 @@ section {
     color: #fff;
 }
 
+
 /* About Section */
 
 .about {
@@ -392,6 +281,7 @@ section {
     line-height: 1.7;
     
 }
+
 
 
 /* Skills Section */
@@ -753,4 +643,34 @@ section {
     text-align: center;
     font-size: 13px;
     color: #c5c5c5;
+}
+/* MOBILE  */
+@media (max-width: 768px) {
+
+  .nav-center {
+    display: none;
+  }
+
+  .Home {
+    text-align: center;
+    align-items: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttons a {
+    width: 100%;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
 }

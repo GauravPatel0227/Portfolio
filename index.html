@@ -23,6 +23,9 @@
             <a href="#projects"> Projects</a>
             <a href="#contact"> Contact</a>
         </nav>
+        <div class="menu-toggle">
+  <i class="fa-solid fa-bars"></i>
+</div>
 
        <div class="nav-icons">
     <a href="https://github.com/GauravPatel0227" target="_blank">
@@ -50,7 +53,8 @@
         <div class="buttons">
     <a href="#projects" class="Projects">View Projects →</a>
     <a href="#contact" class="Contact">✉ Get in Touch</a>
-</div>
+        </div>
+
 
     </section>
 
@@ -75,8 +79,10 @@
              
             </p>
         </div>
+        
 
     </div>
+    
 </section>
 
     <!-- Skills Section -->
@@ -199,7 +205,17 @@
             <h3>Send Me a Message</h3>
             <p>Fill out the form below and I'll get back to you as soon as possible.</p>
 
-            <form>
+          
+                <form 
+  action="https://formsubmit.co/gauravpatel2500@gmail.com"
+  method="POST"
+  onsubmit="handleSubmit(event)"
+>
+
+  <!-- FormSubmit settings -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
                 <label>Name</label>
                 <input type="text" placeholder="Your name">
 
@@ -213,8 +229,10 @@
                 <textarea placeholder="Tell me about your project..."></textarea>
 
                 <button type="submit"> Send Message </button>
+                <p id="success-message">Message sent successfully!</p>
             </form>
         </div>
+        
 
         <!-- Info -->
         
