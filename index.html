@@ -43,6 +43,11 @@
 
     <!-- Hero Section -->
     <section id="Home" class="Home">
+        <!-- Background layers -->
+        <div class="hero-bg" aria-hidden="true">
+            <canvas id="stars"></canvas>
+            <div class="nebula" aria-hidden="true"></div>
+        </div>
         
         <h1>Hi, I'm <span>Gaurav Patel</span></h1>
 
@@ -54,13 +59,18 @@
     <a href="#projects" class="Projects">View Projects →</a>
     <a href="#contact" class="Contact">✉ Get in Touch</a>
         </div>
-
-
+    
+      
     </section>
 
     <!-- About Section -->
 
 <section id="about" class="about">
+    <div class="about-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
     <div class="about-container">
 
         <!-- Image -->
@@ -87,12 +97,13 @@
 
     <!-- Skills Section -->
 <section id="skills" class="skills">
+ 
     <h2>Technical Skills</h2>
     <p class="subtitle">Technologies and tools I work with</p>
 
      <div class="badge-container">
     <span class="badge">➤ Web Developer</span>
-   
+    <span class="badge">➤ Data Analytics</span>
    </div>
 
     <div class="skills-container">
@@ -136,6 +147,11 @@
 </section>
 <!-- Projects Section -->
 <section id="projects" class="projects">
+    <div class="lines" aria-hidden="true">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
     <h2>Featured Projects</h2>
     <p class="subtitle">Some of my recent work</p>
 
@@ -229,7 +245,7 @@
                 <textarea placeholder="Tell me about your project..."></textarea>
 
                 <button type="submit"> Send Message </button>
-                <p id="success-message">Message sent successfully!</p>
+             
             </form>
         </div>
         
