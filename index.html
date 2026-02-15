@@ -2,304 +2,311 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vidrav</title>
-    <link rel="stylesheet" href="portfolio.css">
-    <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Patel - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo">&lt;/&gt; Gaurav Patel</div>
-    
-        <nav class="nav-center">
-            <a href="#Home"> Home</a>
-            <a href="#about"> About</a>
-            <a href="#skills"> Skills</a>
-            <a href="#projects"> Projects</a>
-            <a href="#contact"> Contact</a>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo">PORTFOLIO.</a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li><a href="#work" class="nav-link">WORK</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
-        <div class="menu-toggle">
-  <i class="fa-solid fa-bars"></i>
-</div>
-
-       <div class="nav-icons">
-    <a href="https://github.com/GauravPatel0227" target="_blank">
-        <i class="fa-brands fa-github"></i>
-    </a>
-
-    <a href="https://linkedin.com/in/vidrav-patel" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-    </a>
-</div>
-
-
-      
     </header>
 
     <!-- Hero Section -->
-    <section id="Home" class="Home">
-        <!-- Background layers -->
-        <div class="hero-bg" aria-hidden="true">
-            <canvas id="stars"></canvas>
-            <div class="nebula" aria-hidden="true"></div>
+    <section class="hero" id="hero">
+        <div class="container">
+            <p class="hero-subtitle">WELCOME TO MY SPACE</p>
+            <h1 class="hero-title">
+                <span class="hero-greeting">HI,</span>
+                <span class="hero-name">I'm <span class="typing-text">Gaurav Patel</span><span class="cursor">_</span></span>
+            </h1>
+            <p class="hero-description">A passionate student and developer crafting elegant digital solutions.</p>
         </div>
-        
-        <h1>Hi, I'm <span>Gaurav Patel</span></h1>
-
-        <p>
-           Web Developer crafting modern, responsive, and user-friendly web applications.
-        </p>
-
-        <div class="buttons">
-    <a href="#projects" class="Projects">View Projects →</a>
-    <a href="#contact" class="Contact">✉ Get in Touch</a>
-        </div>
-    
-      
     </section>
 
-    <!-- About Section -->
-
-<section id="about" class="about">
-    <div class="about-bg" aria-hidden="true">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
-    <div class="about-container">
-
-        <!-- Image -->
-        <div class="about-img">
-            <img src="./Profile.jpg">
-         
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face" alt="Gaurav Patel">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-name">Gaurav Patel</h3>
+                    <p class="about-role">B.Tech Student | Web Developer | Data Analyst</p>
+                    <div class="about-divider"></div>
+                    <div class="about-paragraphs">
+                        <p class="about-para">
+                            I am a B.Tech student specializing in <strong>Artificial Intelligence & Machine Learning</strong>, 
+                            passionate about building intelligent solutions that make a real-world impact.
+                        </p>
+                        <p class="about-para">
+                            As a <strong>Web Developer</strong> and <strong>Data Analyst</strong>, I combine technical expertise 
+                            with creative problem-solving to develop innovative applications and extract meaningful insights from data.
+                        </p>
+                        <p class="about-para">
+                            My focus lies in continuous learning, professional growth, and leveraging cutting-edge technologies 
+                            to solve complex problems. I believe in the power of AI and data to transform industries and improve lives.
+                        </p>
+                    </div>
+                    <div class="about-tags">
+                        <span class="about-tag">AI/ML Enthusiast</span>
+                        <span class="about-tag">Full Stack Developer</span>
+                        <span class="about-tag">Data Driven</span>
+                        <span class="about-tag">Innovation Focused</span>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Content -->
-        <div class="about-content">
-            <h1>About Me</h1>
-
-            <p>
-                I am a Web Developer and Data Analyst with a strong focus on building responsive
-                 web applications and transforming data into actionable insights using modern tools and technologies.
-             
-            </p>
-        </div>
-        
-
-    </div>
-    
-</section>
+    </section>
 
     <!-- Skills Section -->
-<section id="skills" class="skills">
- 
-    <h2>Technical Skills</h2>
-    <p class="subtitle">Technologies and tools I work with</p>
-
-     <div class="badge-container">
-    <span class="badge">➤ Web Developer</span>
-    <span class="badge">➤ Data Analytics</span>
-   </div>
-
-    <div class="skills-container">
-        <!-- Frontend -->
-        <div class="skill-card">
-            <h3>Frontend</h3>
-            <div class="tags">
-                <span>HTML</span>
-                <span>Tailwind CSS</span>
-                <span>JavaScript</span>
-                <span>React</span>
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">SKILLS</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="skill-name">Frontend</h3>
+                    <p class="skill-description">HTML, CSS, JavaScript, React, TailwindCSS</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="skill-name">Backend</h3>
+                    <p class="skill-description">Node.js, PHP</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-name">Database</h3>
+                    <p class="skill-description">MongoDB, MySQL</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="skill-name">UI/UX</h3>
+                    <p class="skill-description">Figma</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-name">Languages</h3>
+                    <p class="skill-description">JavaScript, Python, C++</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="skill-name">AI/ML</h3>
+                    <p class="skill-description">Machine Learning, Data Analysis</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Backend -->
-        <div class="skill-card">
-            <h3>Backend</h3>
-            <div class="tags">
-                <span>Python</span>
-                <span>Numpy</span>
-                <span>Pandas</span>
-                <span>MongoDB</span>
+    <!-- Selected Work Section -->
+    <section class="work" id="work">
+        <div class="container">
+            <div class="work-header">
+                <h2 class="work-title">SELECTED WORK</h2>
+                <span class="work-count">(04)</span>
+            </div>
+            <div class="work-grid">
+                <article class="work-card work-card-large">
+                    <div class="work-image">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop" alt="Portfolio Website">
+                        <div class="work-overlay"></div>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <h3 class="work-name">Portfolio Website</h3>
+                            <span class="work-arrow">
+                                <i class="fas fa-arrow-up-right"></i>
+                            </span>
+                        </div>
+                        <div class="work-details">
+                            <span class="work-category">Web Development</span>
+                            <span class="work-year">2024</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card work-card-large">
+                    <div class="work-image">
+                        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&h=600&fit=crop" alt="Agricultural Management System">
+                        <div class="work-overlay"></div>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <h3 class="work-name">Agricultural Management System</h3>
+                            <span class="work-arrow">
+                                <i class="fas fa-arrow-up-right"></i>
+                            </span>
+                        </div>
+                        <div class="work-details">
+                            <span class="work-category">Full Stack Development</span>
+                            <span class="work-year">2024</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card work-card-large">
+                    <div class="work-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop" alt="AI Agent Project">
+                        <div class="work-overlay"></div>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <h3 class="work-name">AI Agent Project</h3>
+                            <span class="work-arrow">
+                                <i class="fas fa-arrow-up-right"></i>
+                            </span>
+                        </div>
+                        <div class="work-details">
+                            <span class="work-category">Artificial Intelligence</span>
+                            <span class="work-year">2024</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card work-card-large">
+                    <div class="work-image">
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop" alt="Startup Project">
+                        <div class="work-overlay"></div>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <h3 class="work-name">Startup Project</h3>
+                            <span class="work-arrow">
+                                <i class="fas fa-arrow-up-right"></i>
+                            </span>
+                        </div>
+                        <div class="work-details">
+                            <span class="work-category">In Progress</span>
+                            <span class="work-year">2025</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="work-upcoming">
+                <div class="upcoming-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Upcoming: AI Project</span>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Tools -->
-        <div class="skill-card">
-            <h3>Tools</h3>
-            <div class="tags">
-                <span>GitHub</span>
-                <span>Figma</span>
-                <span>VS Code</span>
-                 <span>Power BI</span>
-                 <span>Excel</span>
-                 <span>Jupyter</span>
-             
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="contact-title">LET'S TALK</h2>
+            <p class="contact-subtitle">Have a project in mind? Let's collaborate!</p>
+            <a href="mailto:Gauravpatel2500@gmail.com" class="contact-button">
+                <i class="fas fa-envelope"></i>
+                Email Me
+            </a>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="container">
+            <h3 class="social-title">Connect With Me</h3>
+            <div class="social-grid">
+                <a href="https://www.instagram.com/thegauravpatel/profilecard/?igsh=MXkyMnVsZ2xpaGhhcg==" target="_blank" rel="noopener noreferrer" class="social-card">
+                    <div class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <span class="social-name">Instagram</span>
+                </a>
+                <a href="https://www.linkedin.com/in/gaurav-patel-2a027b320" target="_blank" rel="noopener noreferrer" class="social-card">
+                    <div class="social-icon linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <span class="social-name">LinkedIn</span>
+                </a>
+                <a href="https://x.com/GauravPatel227" target="_blank" rel="noopener noreferrer" class="social-card">
+                    <div class="social-icon twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </div>
+                    <span class="social-name">X (Twitter)</span>
+                </a>
+                <a href="https://youtube.com/@vidravpatel" target="_blank" rel="noopener noreferrer" class="social-card">
+                    <div class="social-icon youtube">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <span class="social-name">YouTube</span>
+                </a>
+                <a href="https://www.facebook.com/thegauravpatel" target="_blank" rel="noopener noreferrer" class="social-card">
+                    <div class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <span class="social-name">Facebook</span>
+                </a>
+                <a href="https://github.com/gauravpatel" target="_blank" rel="noopener noreferrer" class="social-card">
+                    <div class="social-icon github">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <span class="social-name">GitHub</span>
+                </a>
             </div>
         </div>
+    </section>
 
-    </div>
-</section>
-<!-- Projects Section -->
-<section id="projects" class="projects">
-    <div class="lines" aria-hidden="true">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-    <h2>Featured Projects</h2>
-    <p class="subtitle">Some of my recent work</p>
-
-    <div class="projects-container">
-
-        <!-- Project 1 -->
-        <div class="project-card">
-           <!--<img src="" alt="E-Commerce Project">--> 
-
-            <div class="project-content">
-                <h3>Coming Soon</h3>
-            
-               <!-- <div class="tags">
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>Stripe</span>
-                    <span>PostgreSQL</span>
-                </div>-->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2026 GAURAV PATEL. ALL RIGHTS RESERVED.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/thegauravpatel/profilecard/?igsh=MXkyMnVsZ2xpaGhhcg==" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gaurav-patel-2a027b320" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://x.com/GauravPatel227" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://youtube.com/@vidravpatel" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.facebook.com/thegauravpatel" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://github.com/gauravpatel" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
+    </footer>
 
-        <!-- Project 2 -->
-        <div class="project-card">
-           <!-- <img src="project2.jpg" alt="Task Management App"> -->
-
-            <div class="project-content">
-                <h3>Coming Soon</h3>
-            
-                <!--<div class="tags">
-                    <span>Next.js</span>
-                    <span>TypeScript</span>
-                    <span>Supabase</span>
-                    <span>Tailwind</span>
-                </div>--> 
-            </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-           <!-- <img src="project3.jpg" alt="AI Code Assistant"> -->
-
-            <div class="project-content">
-                <h3>Coming Soon</h3>
-              
-              <!--  <div class="tags">
-                    <span>Python</span>
-                    <span>OpenAI</span>
-                    <span>React</span>
-                    <span>FastAPI</span>
-                </div>-->
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <h2>Get In Touch</h2>
-    <p class="subtitle">
-        Have a project in mind? Let's discuss how we can work together.
-    </p>
-
-    <div class="contact-container">
-
-        <!-- Form -->
-        <div class="contact-form">
-            <h3>Send Me a Message</h3>
-            <p>Fill out the form below and I'll get back to you as soon as possible.</p>
-
-          
-                <form 
-  action="https://formsubmit.co/gauravpatel2500@gmail.com"
-  method="POST"
-  onsubmit="handleSubmit(event)"
->
-
-  <!-- FormSubmit settings -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-
-                <label>Name</label>
-                <input type="text" placeholder="Your name">
-
-                <label>Email</label>
-                <input type="email" placeholder="your.email@example.com">
-
-                <label>Subject</label>
-                <input type="text" placeholder="What's this about?">
-
-                <label>Message</label>
-                <textarea placeholder="Tell me about your project..."></textarea>
-
-                <button type="submit"> Send Message </button>
-             
-            </form>
-        </div>
-        
-
-        <!-- Info -->
-        
-        </div>
-
-    </div>
-</section>
-<!-- Footer -->
-<footer class="footer">
-    <div class="footer-container">
-
-        <!-- Left -->
-        <div class="footer-left">
-            <h3>&lt;/&gt; Gaurav Patel</h3>
-   
-        </div>
-
-        <!--Right -->
-        <div class="contact-info">
-            <h3>Let's Work Together</h3>
-            <p>
-                I'm always open to discussing new projects, creative ideas, or
-                opportunities to be part of your vision.
-            </p>
-
-         
-
-            <div class="icons">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1
-             &to=gauravpatel2500@gmail.com
-            &su=Portfolio%20Inquiry
-            &body=Hello%20Gaurav,"
-            target="_blank"
-              class="email-icon">
-            <i class="fa-solid fa-envelope"></i> </a>
-
-    <a href="https://github.com/GauravPatel0227" target="_blank">
-        <i class="fa-brands fa-github"></i> </a>
-
-    <a href="https://linkedin.com/in/vidrav-patel" target="_blank">
-        <i class="fa-brands fa-linkedin"></i> </a>
-</div>
-            </div>
-        
-    </div>
-
-    <div class="footer-bottom">
-        © 2026 Gaurav Patel. All rights reserved.
-    </div>
-</footer>
-
-<script src="Portfolio.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
